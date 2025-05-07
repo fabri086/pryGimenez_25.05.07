@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CmbHeroe = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -45,13 +45,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // CmbHeroe
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(31, 62);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 0;
+            this.CmbHeroe.FormattingEnabled = true;
+            this.CmbHeroe.Location = new System.Drawing.Point(31, 62);
+            this.CmbHeroe.Name = "CmbHeroe";
+            this.CmbHeroe.Size = new System.Drawing.Size(121, 21);
+            this.CmbHeroe.TabIndex = 0;
+            this.CmbHeroe.SelectedIndexChanged += new System.EventHandler(this.CmbHeroe_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -74,7 +75,7 @@
             // 
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.CmbHeroe);
             this.groupBox1.Location = new System.Drawing.Point(70, 27);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(216, 271);
@@ -161,7 +162,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CmbHeroe;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
