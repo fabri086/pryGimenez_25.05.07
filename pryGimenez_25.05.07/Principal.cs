@@ -15,13 +15,21 @@ namespace pryGimenez_25._05._07
         public Principal()
         {
             InitializeComponent();
+
+            comboBox1.Items.Add("Heroe");
+            comboBox1.Items.Add("heroe");
+            comboBox1.Items.Add("antiheroe");
+
+            comboBox1.SelectedIndex = 0;
+
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            comboBox1.SelectedIndexChanged += ComboBox1_SelectedIndexChanged;
         }
 
         private void Principal_Load(object sender, EventArgs e)
         {
-            PbImagen.SizeMode = PictureBoxSizeMode.StretchImage; //PictureBoxSizeMode especifica como agrega la imagen
             
-
         }
     }
 }
